@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_main_LAY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/form_inflate_edit_TL"
+                style="@style/EditTextBorderStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                app:errorTextAppearance="@style/error_appearance"
+                android:layout_marginEnd="5dp"
+                app:hintTextAppearance="@style/EditTextBorderStyle"
+                tools:ignore="RtlHardcoded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/form_inflate_edit_EDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/bt_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click"/>
+        </LinearLayout>
+    </RelativeLayout>
